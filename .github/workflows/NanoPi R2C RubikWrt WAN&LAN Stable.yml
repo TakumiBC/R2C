@@ -1,4 +1,4 @@
-name: Build NanoPi R2C RubikWrt WAN/LAN Stable
+name: Build NanoPi R2C RubikWrt WAN&LAN Stable
 on:
   workflow_dispatch:
   schedule:
