@@ -1,4 +1,4 @@
-name: Build NanoPi R2C RubikWrt WAN/LAN Canary Beta
+name: Build NanoPi R2C RubikWrt WAN&LAN Canary Beta
 on:
   workflow_dispatch:
   schedule:
