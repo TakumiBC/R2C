@@ -56,7 +56,11 @@ jobs:
         svn co https://github.com/immortalwrt/immortalwrt/branches/master/target/linux/rockchip target/linux/rockchip
         rm -rf package/boot
         svn co https://github.com/immortalwrt/immortalwrt/branches/master/package/boot package/boot
-        
+    - name: Speed Up
+      uses: klever1988/cachewrtbuild@main
+      with:
+        ccache: 'true'
+        prefix: ${{ github.workspace }}/openwrt      
     - name: Update Feeds
       id: update
       run: |
